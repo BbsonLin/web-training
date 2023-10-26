@@ -340,7 +340,10 @@ layout: section
 
 # About This Slides
 
+<v-click>
+
 ### Also a SPA web app
 
 <div class="flex flex-justify-center "><img src="/slide_qr.png" class="w-8rem mt-1rem" /></div>
 
+</v-click>
