@@ -137,6 +137,38 @@ Web Application
     </div>
 </div>
 
+
+---
+layout: full
+---
+
+# Web 2.0
+
+Web Application
+
+<div class="grid grid-cols-2 gap-4">
+    <div class="flex flex-justify-center items-center flex-col">
+        <div class="text-2xl">HTTP/HTTPS Connection</div>
+        <div class="text-sm text-truegray">(REST API)</div>
+        <img src="/HttpConnection.svg" class="w-full" v-click="1" />
+        <ul>
+            <li v-click="2">Uni-directional</li>
+            <li v-click="3">Stateless</li>
+            <li v-click="4">Static data, not updated regularly</li>
+        </ul>
+    </div>
+    <div class="flex flex-justify-center items-center flex-col">
+        <div class="text-2xl">WebSocket Connection</div>
+        <div class="text-sm text-truegray">(WebSocket API)</div>
+        <img src="/WSConnection.svg" class="w-full" v-click="1" />
+        <ul>
+            <li v-click="2">Bi-directional</li>
+            <li v-click="3">Stateful</li>
+            <li v-click="4">Dynamic data, constant and frequent updates</li>
+        </ul>
+    </div>
+</div>
+
 ---
 layout: full
 ---
@@ -186,7 +218,7 @@ Application Server
     </div>
     <div class="flex flex-justify-start items-center flex-col">
         <div v-click>Web Frameworks</div>
-        <img src="/MPA_framework.svg" class="w-20rem mt-1rem" v-click />
+        <img src="/WebFrameworks.svg" class="w-20rem mt-1rem" v-click />
     </div>
 </div>
 
@@ -201,12 +233,14 @@ layout: full
 Web App
 
 <div class="grid grid-cols-2 gap-4">
-    <div class="flex flex-justify-start items-center flex-col">
+    <div class="flex flex-justify-start items-center flex-col" v-click>
         <div class="text-3xl">MPA</div>
+        <div class="text-sm text-truegray">Multi-Page Application</div>
         <img src="/MPA.jpg" class="w-30rem mt-1rem" />
     </div>
-    <div class="flex flex-justify-start items-center flex-col">
+    <div class="flex flex-justify-start items-center flex-col" v-click>
         <div class="text-3xl">SPA</div>
+        <div class="text-sm text-truegray">Single-Page Application</div>
         <img src="/SPA.jpg" class="w-30rem mt-1rem" />
     </div>
 </div>
@@ -261,16 +295,28 @@ layout: full
 
 SDAQ & EMU
 
-#### Web Console
 
-- On edge device
-- As fast as possible
-
+<div class="grid grid-cols-[200px_1fr] gap-4">
+    <div class="flex flex-justify-center items-start">
+        <ul>
+            <li v-click>On edge device</li>
+            <span v-click>=> Don't care about SEO</span>
+            <li v-click>As fast as possible</li>
+            <span v-click>=> SPA</span>
+        </ul>
+    </div>
+    <div class="flex flex-justify-start items-center flex-col">
+        <img v-click src="/SDAQ_EMU.svg" class="w-full mt-1rem" />
+    </div>
+</div>
 
 ---
-layout: full
+layout: section
 ---
 
-# Real World Project
+# About This Slides
 
-About This Slides
+### Also a SPA web app
+
+<div class="flex flex-justify-center "><img src="/slide_qr.png" class="w-8rem mt-1rem" /></div>
+
