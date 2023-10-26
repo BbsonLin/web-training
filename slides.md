@@ -11,6 +11,8 @@ Bobson Lin
 
 ---
 layout: full
+growX: 10
+growY: 120
 ---
 
 # History of Web
@@ -33,6 +35,8 @@ layout: full
 
 ---
 layout: full
+growX: 100
+growY: 10
 ---
 
 # History of Web - Web 1.0
@@ -63,6 +67,8 @@ Search Engine: Google, Yahoo ...
 
 ---
 layout: full
+growX: 10
+growY: 120
 ---
 
 # History of Web
@@ -83,6 +89,8 @@ layout: full
 
 ---
 layout: full
+growX: 100
+growY: 10
 ---
 
 # History of Web - Web 2.0
@@ -110,6 +118,8 @@ Streaming Media: Youtube, Netflix ...
 
 ---
 layout: full
+growX: 100
+growY: 100
 ---
 
 # Web 2.0
@@ -140,6 +150,8 @@ Web Application
 
 ---
 layout: full
+growX: 100
+growY: 100
 ---
 
 # Web 2.0
@@ -171,6 +183,8 @@ Web Application
 
 ---
 layout: full
+growX: 100
+growY: 10
 ---
 
 # Web Backend
@@ -198,6 +212,8 @@ Web Server
 
 ---
 layout: full
+growX: 100
+growY: 10
 ---
 
 # Web Backend
@@ -226,6 +242,8 @@ Application Server
 
 ---
 layout: full
+growX: 100
+growY: 100
 ---
 
 # Web Frontend
@@ -249,6 +267,8 @@ Web App
 
 ---
 layout: full
+growX: 100
+growY: 100
 ---
 
 # Web Frontend
@@ -268,6 +288,8 @@ Web App
 
 ---
 layout: full
+growX: 100
+growY: 100
 ---
 
 # Web Frontend
@@ -289,6 +311,8 @@ Web App
 
 ---
 layout: full
+growX: 10
+growY: 100
 ---
 
 # Real World Project
