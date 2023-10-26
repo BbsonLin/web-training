@@ -29,33 +29,37 @@ layout: full
 
 <div class="absolute left-145 top-78 w-20rem h-5rem bg-[#121212]"></div>
 
+<!-- https://www.iotasol.com/blog/what-is-web3-how-its-different-from-web1-and-web2 -->
 
 ---
 layout: full
 ---
 
 # History of Web - Web 1.0
-1990 - 2004
 
+1990 - 2004
 
 <div class="grid grid-cols-[320px_1fr] gap-4">
     <div>
-        <img src="/ie.jpg" class="w-16rem" />
+        <img src="/ie.jpg" class="w-16rem" v-click="1" />
         <ul>
-            <li>Ecommerce</li>
-            <li>Search Engine</li>
+            <li v-click="2">Ecommerce</li>
+            <li v-click="4">Search Engine</li>
+            <div class="flex">
+                <img v-click="3" src="/Ecommerce.svg" class="w-10rem" />
+                <img v-click="5" src="/SearchEngine.svg" class="w-10rem" />
+            </div>
         </ul>
     </div>
     <div>
-        <img src="/nasa-1997.jpeg" />
+        <img src="/nasa-1997.jpeg"  />
     </div>
 </div>
 
-<!-- 
+<!--
 Ecommerce: Amazon, Ebay  ...
 Search Engine: Google, Yahoo ...
  -->
-
 
 ---
 layout: full
@@ -65,106 +69,96 @@ layout: full
 
 <img src="/history_of_web.svg" />
 
-<!-- <div class="absolute left-63 top-53 w-40rem h-5rem bg-[#121212]" v-click-hide="1"></div> -->
+<div class="absolute left-63 top-53 w-40rem h-5rem bg-[#121212]" v-click-hide="1"></div>
 
 <div class="absolute left-65 top-73 z-1" v-click="1"> 
     <ul>
         <li>Dynamic Web Pages</li>
         <li>Read-Write Web</li>
-        <li>Information Sharing</li>
+        <li>Interactive Applications</li>
     </ul>
 </div>
 
-<!-- <div class="absolute left-145 top-78 w-20rem h-5rem bg-[#121212]" v-click-hide="3"></div> -->
+<div class="absolute left-145 top-78 w-20rem h-5rem bg-[#121212]" v-click-hide="3"></div>
 
 ---
 layout: full
 ---
 
 # History of Web - Web 2.0
+
 2000 - Now
 
-
 <div class="grid grid-cols-[320px_1fr] gap-4">
-    <div class="flex flex-justify-center items-center flex-col">
-        <img src="/chrome.png" class="w-10rem" />
-        <ul>
-            <li>SaaS</li>
-            <li>Social Media</li>
-            <li>Streaming Media</li>
-        </ul>
+    <div class="flex flex-justify-center items-start">
+        <img src="/chrome.png" class="w-14rem" v-click="1" />
     </div>
-    <div class="flex flex-justify-center items-center flex-col">
-        <img src="/SaaS.svg" class="w-12rem" />
-        <img src="/SocialMedia.svg" class="w-12rem" />
-        <img src="/StreamingMedia.svg" class="w-12rem" />
+    <div class="flex flex-justify-start items-center flex-col">
+        <ul>
+            <li v-click="2"><span>SaaS</span><img src="/SaaS.svg" class="w-12rem" /></li>
+            <li v-click="3">Social Media<img src="/SocialMedia.svg" class="w-12rem" /></li>
+            <li v-click="4">Streaming Media<img src="/StreamingMedia.svg" class="w-12rem" /></li>
+        </ul>
     </div>
 </div>
 
-
-
-::right::
-
-* SaaS
-* Social Media
-* Streaming Media
-
-
-
-<!-- 
+<!--
 SaaS: Google Apps (Gmail, Google Drive) ...
 Social Media: Facebook, Twitter, Instagram ...
 Streaming Media: Youtube, Netflix ...
  -->
-
 
 ---
 layout: full
 ---
 
 # Web 2.0
+
 Web Application
 
 <div class="grid grid-cols-[1fr_100px_1fr] gap-4">
     <div class="flex flex-justify-center items-center flex-col">
         <div>Frontend</div>
-        <img src="/web_frontend_rmbg.png" class="w-20rem mt-3rem" />
+        <img src="/web_frontend_rmbg.png" class="w-full mt-3rem" />
     </div>
     <div class="flex flex-justify-start flex-col">
-        <div class="absolute left-110 top-50">HTTP / HTTPS</div>
-        <Arrow x1="450" y1="240" x2="550" y2="240" />
-        <Arrow x1="550" y1="280" x2="450" y2="280" />
-        <Arrow x1="450" y1="380" x2="550" y2="380" />
-        <Arrow x1="550" y1="380" x2="450" y2="380" />
-        <div class="absolute left-113 top-85">WS / WSS</div>
+        <div class="absolute left-110 top-50" v-click="1">HTTP / HTTPS</div>
+        <Arrow x1="420" y1="240" x2="570" y2="240" v-click="1" />
+        <Arrow x1="570" y1="280" x2="420" y2="280" v-click="1" />
+        <Arrow x1="420" y1="380" x2="570" y2="380" v-click="2" />
+        <Arrow x1="570" y1="380" x2="420" y2="380" v-click="2" />
+        <div class="absolute left-113 top-85" v-click="2">WS / WSS</div>
     </div>
     <div class="flex flex-justify-center items-center flex-col">
         <div>Backend</div>
-        <img src="/server.png" class="w-10rem mt-3rem" />
+        <img src="/server.png" class="w-10rem mt-3rem ml-2rem" />
+        <img src="/REST.svg" class="absolute left-145 top-50 w-5rem" v-click="3" />
+        <img src="/WebSocket.svg" class="absolute left-145 top-80 w-5rem" v-click="4" />
     </div>
 </div>
-<div class="flex flex-justify-center mt-3rem">Web APIs</div>
-
 
 ---
 layout: full
 ---
 
 # Web Backend
+
 Web Server
 
+<v-clicks at="1">
 
-* Deliver static content.
-* Content is delivered using the HTTP protocol only.
-* Serves only web-based applications.
+- Deliver static content.
+- Content is delivered using the HTTP protocol only.
+- Serves only web-based applications.
 
+</v-clicks>
 
 <div class="grid grid-cols-2 gap-4">
     <div class="flex flex-justify-start items-center flex-col">
-        <img src="/Web_Server.jpeg" class="w-30rem mt-2rem" />
+        <img src="/Web_Server.jpeg" class="w-30rem mt-2rem" v-click="1" />
     </div>
     <div class="flex flex-justify-start items-center flex-col">
-        <img src="/Web_servers_logo.svg" class="w-24rem" />
+        <img src="/Web_servers_logo.svg" class="w-24rem" v-click />
     </div>
 </div>
 
@@ -175,22 +169,26 @@ layout: full
 ---
 
 # Web Backend
+
 Application Server
 
-* Delivers dynamic content.
-* Provides business logic to application programs using several protocols (including HTTP).
-* Can serve web and enterprise-based applications.
+<v-clicks at="1">
+
+- Delivers dynamic content.
+- Provides business logic to application programs using several protocols (including HTTP).
+- Can serve web and enterprise-based applications.
+
+</v-clicks>
 
 <div class="grid grid-cols-2 gap-4">
     <div class="flex flex-justify-start items-center flex-col">
-        <img src="/Application_Server.jpeg" class="w-30rem mt-1rem" />
+        <img src="/Application_Server.jpeg" class="w-30rem mt-1rem" v-click="1" />
     </div>
     <div class="flex flex-justify-start items-center flex-col">
-        <img src="/MPA_framework.svg" class="w-20rem mt-1rem" />
-        <div>Web Frameworks</div>
+        <div v-click>Web Frameworks</div>
+        <img src="/MPA_framework.svg" class="w-20rem mt-1rem" v-click />
     </div>
 </div>
-
 
 <!-- https://www.educative.io/answers/web-server-vs-application-server -->
 
@@ -199,6 +197,7 @@ layout: full
 ---
 
 # Web Frontend
+
 Web App
 
 <div class="grid grid-cols-2 gap-4">
@@ -212,12 +211,33 @@ Web App
     </div>
 </div>
 
+<!-- https://hackmd.io/@naralala/B1BiZhvtD -->
 
 ---
 layout: full
 ---
 
 # Web Frontend
+
+Web App
+
+<div class="grid grid-cols-2 gap-4">
+    <div class="flex flex-justify-start items-center flex-col">
+        <div class="text-3xl">MPA</div>
+        <img src="/MPA_Diagram.svg" class="w-full mt-1rem" v-click="1" />
+    </div>
+    <div class="flex flex-justify-start items-center flex-col">
+        <div class="text-3xl">SPA</div>
+        <img src="/SPA_Diagram.svg" class="w-full mt-1rem" v-click="2"  />
+    </div>
+</div>
+
+---
+layout: full
+---
+
+# Web Frontend
+
 Web App
 
 <div class="grid grid-cols-2 gap-4">
@@ -233,11 +253,24 @@ Web App
     </div>
 </div>
 
+---
+layout: full
+---
+
+# Real World Project
+
+SDAQ & EMU
+
+#### Web Console
+
+- On edge device
+- As fast as possible
+
 
 ---
 layout: full
 ---
 
 # Real World Project
-SDAQ & EMU
 
+About This Slides
