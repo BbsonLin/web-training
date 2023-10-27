@@ -31,7 +31,10 @@ growY: 120
 
 <div class="absolute left-145 top-78 w-20rem h-5rem bg-[#121212]"></div>
 
-<!-- https://www.iotasol.com/blog/what-is-web3-how-its-different-from-web1-and-web2 -->
+<!-- 
+
+https://www.iotasol.com/blog/what-is-web3-how-its-different-from-web1-and-web2 
+-->
 
 ---
 layout: full
@@ -63,7 +66,7 @@ growY: 10
 <!--
 Ecommerce: Amazon, Ebay  ...
 Search Engine: Google, Yahoo ...
- -->
+-->
 
 ---
 layout: full
@@ -114,7 +117,7 @@ growY: 10
 SaaS: Google Apps (Gmail, Google Drive) ...
 Social Media: Facebook, Twitter, Instagram ...
 Streaming Media: Youtube, Netflix ...
- -->
+-->
 
 ---
 layout: full
@@ -127,25 +130,32 @@ growY: 100
 Web Application
 
 <div class="grid grid-cols-[1fr_100px_1fr] gap-4">
-    <div class="flex flex-justify-center items-center flex-col">
-        <div>Frontend</div>
+    <div class="flex flex-justify-center items-center flex-col" v-click="1">
+        <div class="text-2xl">Frontend</div>
         <img src="/web_frontend_rmbg.png" class="w-full mt-3rem" />
     </div>
     <div class="flex flex-justify-start flex-col">
-        <div class="absolute left-110 top-50" v-click="1">HTTP / HTTPS</div>
-        <Arrow x1="420" y1="240" x2="570" y2="240" v-click="1" />
-        <Arrow x1="570" y1="280" x2="420" y2="280" v-click="1" />
-        <Arrow x1="420" y1="380" x2="570" y2="380" v-click="2" />
-        <Arrow x1="570" y1="380" x2="420" y2="380" v-click="2" />
-        <div class="absolute left-113 top-85" v-click="2">WS / WSS</div>
+        <div v-click="2">
+            <div class="absolute left-110 top-50">HTTP / HTTPS</div>
+            <Arrow x1="420" y1="240" x2="570" y2="240" />
+            <Arrow x1="570" y1="280" x2="420" y2="280" />
+        </div>
+        <div v-click="3">
+            <Arrow x1="420" y1="380" x2="570" y2="380" />
+            <Arrow x1="570" y1="380" x2="420" y2="380" />
+            <div class="absolute left-113 top-85">WS / WSS</div>
+        </div>
     </div>
-    <div class="flex flex-justify-center items-center flex-col">
-        <div>Backend</div>
+    <div class="flex flex-justify-center items-center flex-col" v-click="1">
+        <div class="text-2xl">Backend</div>
         <img src="/server.png" class="w-10rem mt-3rem ml-2rem" />
-        <img src="/REST.svg" class="absolute left-145 top-50 w-5rem" v-click="3" />
-        <img src="/WebSocket.svg" class="absolute left-145 top-80 w-5rem" v-click="4" />
     </div>
+    <img src="/REST.svg" class="absolute left-145 top-50 w-5rem" v-click="4" />
+    <img src="/WebSocket.svg" class="absolute left-145 top-80 w-5rem" v-click="5" />
 </div>
+
+
+<!-- HTTPS 和 WSS 的 S 代表 SSL/TLS 連線上作加密使用 -->
 
 
 ---
@@ -180,6 +190,12 @@ Web Application
         </ul>
     </div>
 </div>
+
+<!-- 
+Stateless: 無狀態, 每次 Request 都是獨立，彼此是沒有關聯性的，每個伺服器的回覆都不依賴任何存於伺服器的狀態
+
+Stateful: 每次 Request 有關聯性, 需要伺服器記錄先前的 Reuqest 狀態
+-->
 
 ---
 layout: full
@@ -279,6 +295,7 @@ Web App
     <div class="flex flex-justify-start items-center flex-col">
         <div class="text-3xl">MPA</div>
         <img src="/MPA_Diagram.svg" class="w-full mt-1rem" v-click="1" />
+        <!-- <img src="/MPA_Web.jpg" class="w-6rem mt-1rem" v-click="3" /> -->
     </div>
     <div class="flex flex-justify-start items-center flex-col">
         <div class="text-3xl">SPA</div>
@@ -299,13 +316,13 @@ Web App
 <div class="grid grid-cols-2 gap-4">
     <div class="flex flex-justify-start items-center flex-col">
         <div class="text-3xl">MPA</div>
-        <img src="/MPA_pros_cons.jpg" class="w-16rem mt-1rem" />
-        <img src="/MPA_framework.svg" class="w-20rem mt-1rem" />
+        <img src="/MPA_pros_cons.svg" class="w-20rem" />
+        <img src="/MPA_framework.svg" class="w-20rem" v-click />
     </div>
     <div class="flex flex-justify-start items-center flex-col">
         <div class="text-3xl">SPA</div>
-        <img src="/SPA_pros_cons.jpg" class="w-16rem mt-1rem" />
-        <img src="/SPA_framework.svg" class="w-20rem mt-1rem" />
+        <img src="/SPA_pros_cons.svg" class="w-20rem" />
+        <img src="/SPA_framework.svg" class="w-20rem" v-click />
     </div>
 </div>
 
